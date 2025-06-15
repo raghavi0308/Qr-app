@@ -6,9 +6,11 @@ export default defineConfig({
   plugins: [react()],
   base: '/Qr-app/',
   build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
-      output: {
-        manualChunks: undefined
+      input: {
+        main: './index.html'
       }
     }
   }
