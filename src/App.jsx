@@ -54,4 +54,4 @@ const QrGenerator = () => {
   );
 }
 
-export default QrGenerator;
+export default QrGenerator; 
