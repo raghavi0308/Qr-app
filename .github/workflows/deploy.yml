@@ -36,4 +36,5 @@ jobs:
           clean: true
           clean-exclude: |
             .git
-            .github 
+            .github
+          commit-message: "Deploy to GitHub Pages" 

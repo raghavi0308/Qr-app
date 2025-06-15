@@ -18,5 +18,8 @@ export default defineConfig({
         assetFileNames: 'assets/[name]-[hash].[ext]'
       }
     }
+  },
+  server: {
+    port: 3000
   }
 })
