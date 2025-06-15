@@ -1,0 +1,92 @@
+@keyframes bgAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(-45deg, #121212, #222831, #393E46, #00ADB5);
+  background-size: 400% 400%;
+  animation: bgAnimation 10s ease infinite;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-container {
+  position: absolute;
+  top: 18%;  
+  left:38%; 
+  text-align: center;
+  background: #1e1e1e;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.qr-input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.qr-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.qr-qr-btn {
+  background: #518623;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.qr-qr-btn:hover {
+  background: #79db23;
+}
+
+.qr-dwn-btn {
+  background: #4096af;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.qr-dwn-btn:hover {
+  background: #7dcfe8;
+}
+
+.qr-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Push QR Code below buttons */
+  width: 100%; /* Ensures it stays within the box */
+  height: auto;
+  position: relative; /* Remove absolute positioning */
+}
+
+.qr-image {
+  display: block;
+  max-width: 80%; /* Ensures QR code scales properly */
+  height: auto;
+}
+
