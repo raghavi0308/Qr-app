@@ -17,9 +17,15 @@ export default defineConfig({
         chunkFileNames: 'assets/[name]-[hash].js',
         assetFileNames: 'assets/[name]-[hash].[ext]'
       }
+    },
+    modulePreload: {
+      polyfill: true
     }
   },
   server: {
     port: 3000
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.json']
   }
 })
