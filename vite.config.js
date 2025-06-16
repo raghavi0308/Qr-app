@@ -10,7 +10,7 @@ export default defineConfig({
     assetsDir: 'assets',
     rollupOptions: {
       input: {
-        main: './index.html'
+        main: './main.jsx'
       },
       output: {
         entryFileNames: 'assets/[name]-[hash].js',
