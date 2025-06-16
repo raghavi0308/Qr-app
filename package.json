@@ -1,9 +1,9 @@
 {
-  "name": "qr-app",
+  "name": "Qr-app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://yourusername.github.io/qr-app",
+  "homepage": "https://raghavi0308.github.io/Qr-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
